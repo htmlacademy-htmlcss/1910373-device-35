@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* header */
+
+.field {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.button-form-navigation {
+  font-family: "Rubik";
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation-link {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-list,
+.subcatalog,
+.navigation-list {
+  list-style-type: none;
+}
+
+.button-catalog {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.subcatalog-link {
+  font-family: "Rubik";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* main */
+
+.main-index {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.slider-title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.slider-description {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.slider-content-link,
+.about-link,
+.feedback-link {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.termin-slider-content {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.details-slider-content {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* category */
+
+.category-catalog-list {
+  list-style-type: none;
+}
+
+.category-catalog-link {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: -0.2px;
+}
+
+/* tab */
+
+.buttons-tab-list,
+.tab-list,
+.contacts-list {
+  list-style-type: none;
+}
+
+.buttons-tab {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+}
+
+.tab-title,
+.about-title,
+.contacts-title,
+.subscribes-title {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.tab-description,
+.about-text,
+.contacts-text,
+.contacts-address,
+.contacts-item,
+.number-phone-link,
+.subscribes-text {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+/* delivery */
+
+.delivery-order-link {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* about */
+
+.about-item {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+}
+
+/* subscribe */
+
+.subscribes-input {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.button-subscribe {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+}
+
+/* footer */
+
+.footer-contacts-address,
+.footer-number-phone {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}

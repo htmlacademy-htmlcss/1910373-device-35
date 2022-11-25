@@ -2,6 +2,7 @@
 <html lang="ru">
 
   <head>
+    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
     <title>HTML Academy: Девайс</title>
   </head>
@@ -10,7 +11,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a href="#" class="navigation-link-logo">
-          <img src="" alt="Логотип Девайс" width="145" height="36">
+          <img src="./images/" alt="Логотип Девайс" width="145" height="36">
         </a>
         <form class="search-form-navigation" action="https://echo.htmlacademy.ru/" method="post">
           <label class="label-search-of-site">
@@ -18,20 +19,14 @@
           </label>
           <button class="button-form-navigation" type="submit">Найти</button>
         </form>
-        <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <button class="navigation-button-sign" type="submit">Войти</button>
-          </li>
-          <li class="navigation-user-item">
-            <button class="navigation-button-compare" type="submit">Сравнить</button>
-          </li>
-          <li class="navigation-user-item">
-            <button class="navigation-button-basket" type="submit">Корзина</button>
-          </li>
-        </ul>
+        <div class="navigation-user">
+          <a class="navigation-link navigation-sign" href="#">Войти</a>
+          <a class="navigation-link navigation-compare" href="#">Сравнить</a>
+          <a class="navigation-link navigation-basket" href="#">Корзина</a>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <button class="button-catalog" type="submit">Каталог товаров</button>
+            <button class="button-catalog" type="button">Каталог товаров</button>
             <ul class="subcatalog">
               <li class="subcatalog-item">
                 <a class="subcatalog-link" href="#">Виртуальная реальность</a>
@@ -56,13 +51,13 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <button class="navigation-button" type="submit">Доставка</button>
+            <button class="button-catalog" type="button">Доставка</button>
           </li>
           <li class="navigation-item">
-            <button class="navigation-button" type="submit">Гарантия</button>
+            <button class="button-catalog" type="button">Гарантия</button>
           </li>
           <li class="navigation-item">
-            <button class="navigation-button" type="submit">Контакты</button>
+            <button class="button-catalog" type="button">Контакты</button>
           </li>
         </ul>
       </nav>
@@ -193,7 +188,7 @@
         <ul class="product-list">
           <li class="product-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="" alt="Селфи-палка" width="360" height="380">
+              <img class="product-image" src="./images/selfie-product.png" alt="Селфи-палка" width="360" height="380">
             </a>
             <a class="product-link product-link-text" href="#">
               <p class="product-title">Любительская селфи-палка</p>
@@ -202,7 +197,8 @@
           </li>
           <li class="product-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="" alt="Селфи-палка" width="360" height="380">
+              <img class="product-image" src="./images/selfie-product-pro.png" alt="Селфи-палка" width="360"
+                height="380">
             </a>
             <a class="product-link product-link-text" href="#">
               <p class="product-title">Профессиональная селфи-палка</p>
@@ -211,7 +207,8 @@
           </li>
           <li class="product-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="" alt="Селфи-палка" width="360" height="380">
+              <img class="product-image" src="./images/selfie-product-ip.png" alt="Селфи-палка" width="360"
+                height="380">
             </a>
             <a class="product-link product-link-text" href="#">
               <p class="product-title">Непотопляемая селфи-палка</p>
@@ -220,7 +217,8 @@
           </li>
           <li class="product-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="" alt="Селфи-палка" width="360" height="380">
+              <img class="product-image" src="./images/selfie-product-follow-me.png" alt="Селфи-палка" width="360"
+                height="380">
             </a>
             <a class="product-link product-link-text" href="#">
               <p class="product-title">Селфи-палка «Следуй за мной»</p>
@@ -263,10 +261,16 @@
       </div>
       <div class="footer-information">
         <div class="footer-description-device">
-          <ul class="description-device-list">
-            <li class="description-device-item">Доставка</li>
-            <li class="description-device-item">Гарантия</li>
-            <li class="description-device-item">Кредит</li>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <button class="button-catalog" type="button">Доставка</button>
+            </li>
+            <li class="navigation-item">
+              <button class="button-catalog" type="button">Гарантия</button>
+            </li>
+            <li class="navigation-item">
+              <button class="button-catalog" type="button">Контакты</button>
+            </li>
           </ul>
         </div>
         <div class="footer-social">
@@ -291,7 +295,7 @@
       </div>
       <div class="footer-numbers-and-logo">
         <div class="footer-numbers-phone">
-          <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <a class="footer-number-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
         <div class="footer-logo-academy">
           <a href="https://htmlacademy.ru/">
