@@ -1191,7 +1191,9 @@ body {
   text-transform: uppercase;
   background-color: #ffffff;
   border: 3px solid #e5e5e5;
-  padding: 18px 294px;
+  padding: 18px 39px;
+  width: 760px;
+  height: 55px;
   margin-left: 40px;
   margin-top: 44px;
   cursor: pointer;
@@ -1202,14 +1204,55 @@ body {
 .pagination-list {
   display: flex;
   width: 760px;
+  height: 71px;
   margin: 0 auto;
-  margin-left: 200px;
+  margin-top: 44px;
+  margin-right: 179px;
+  margin-bottom: 78px;
   padding: 25px 380px;
   list-style-type: none;
   background-color: #ebebeb;
-
+  padding-left: 290px;
 }
 
-.pagination-link {
+.pagination-link,
+.pagination-doted {
   text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  opacity: 0.3;
+}
+
+.pagination-item {
+  margin-right: 31px;
+}
+
+.buttons-pagination-container {
+  display: flex;
+  width: 723px;
+  justify-content: space-between;
+  position: relative;
+  bottom: 123px;
+  left: 520px;
+}
+
+.buttons-pagination {
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.pagination-preview {
+  color: #444444;
+  opacity: 0.3;
 }
