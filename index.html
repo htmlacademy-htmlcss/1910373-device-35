@@ -10,14 +10,15 @@
   <body>
     <header class="page-header container">
       <a href="#" class="navigation-link-logo">
-        <img src="./images/device-logo-head.svg" alt="Логотип Девайс" width="145" height="36">
+        <img src="./images/device-logo-head.svg" alt="Логотип Девайс." width="145" height="36">
       </a>
       <div class="container-user-menu">
         <form class="search-form-navigation" action="https://echo.htmlacademy.ru/" method="post">
           <label class="label-search-of-site">
-            <input class="field" type="text" id="search-of-site" placeholder="Поиск по сайту">
-            <span class="input-border"></span>
+            <!-- Для проверки неактивного состояния повесить на инпут disabled -->
+            <input class="field" type="search" id="search-of-site" placeholder="Поиск по сайту">
           </label>
+          <!-- Для проверки неактивного состояния повесить disabled -->
           <button class="button-form-navigation" type="submit">Найти</button>
         </form>
         <div class="navigation-user">
@@ -47,13 +48,15 @@
                     <span class="visually-hidden">Закрыть</span>
                   </button>
                 </li>
-                <div class="popover-price-wrapper">
-                  <span class="popover-number-product">Товаров: 2</span>
-                  <span class="popover-price">Сумма: 2000 ₽</span>
-                </div>
-                <div class="button-popover-container">
-                  <button class="button-popover" type="button">Открыть корзину</button>
-                </div>
+              </ul>
+              <div class="popover-price-wrapper">
+                <span class="popover-number-product">Товаров: 2</span>
+                <span class="popover-price">Сумма: 2000 ₽</span>
+              </div>
+              <div class="button-popover-container">
+                <!-- Для проверки состояния Disable убрать у ссылки href -->
+                <a class="button-popover" href="#">Открыть корзину</a>
+              </div>
             </div>
           </div>
         </div>
@@ -101,11 +104,12 @@
       <section class="slider container">
         <h2 class="visually-hidden">Фотогалерея товаров</h2>
         <ul class="slider-card-list">
-          <li class="slider-card-item slider-card-current slider-numbers">
-            <img class="image-slider" src="./images/copter.png" alt="Квадрокоптер" width="560" height="560">
+          <!-- Чтобы увидеть последующие слайды добавить класс slider-card-current тегу li -->
+          <li class="slider-card-item slider-card-current slider-numbers" data-counter="01">
+            <img class="image-slider" src="./images/copter.png" alt="Квадрокоптер." width="560" height="560">
             <div class="slider-content">
-              <h3 class="slider-title">Порхает как бабочка,<br> жалит как пчела!</h3>
-              <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером,
+              <h3 class="slider-title main-content-title">Порхает как бабочка, жалит как пчела!</h3>
+              <p class="slider-description">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.
               </p>
               <a class="slider-content-link buttons-tab buttons-active-states" href="#">Подробнее</a>
@@ -121,14 +125,14 @@
               </dl>
             </div>
           </li>
-          <li class="slider-card-item">
-            <img class="image-slider" src="./images/fitness-watch.png" alt="Фитнес-браслет" width="560" height="560">
+          <li class="slider-card-item slider-numbers" data-counter="02">
+            <img class="image-slider" src="./images/fitness-watch.png" alt="Фитнес-браслет." width="560" height="560">
             <div class="slider-content">
-              <h3 class="slider-title">Худеем<br> правильно!</h3>
-              <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать
-                занятия и соблюдать диету.
+              <h3 class="slider-title main-content-title">Худеем правильно!</h3>
+              <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы
+                не&nbsp;пропускать занятия и&nbsp;соблюдать диету.
               </p>
-              <a class="slider-content-link buttons-tab" href="#">Подробнее</a>
+              <a class="slider-content-link buttons-tab buttons-active-states" href="#">Подробнее</a>
               <dl class="properties-slider-content">
                 <div class="properties-slider-container">
                   <dt class="termin-slider-content">Без подзарядки</dt>
@@ -137,15 +141,15 @@
               </dl>
             </div>
           </li>
-          <li class="slider-card-item">
-            <img class="image-slider" src="./images/selfie.png" alt="Селфи-палка" width="560" height="560">
+          <li class="slider-card-item slider-numbers" data-counter="03">
+            <img class="image-slider" src="./images/selfie.png" alt="Селфи-палка." width="560" height="560">
             <div class="slider-content">
-              <h3 class="slider-title">Делай селфи,<br> как Бен Стиллер! </h3>
-              <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь
-                (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              <h3 class="slider-title main-content-title">Делай селфи,<br> как Бен Стиллер! </h3>
+              <p class="slider-description">Самая длинная палка для селфи доступна в&nbsp;нашем магазине. Восемь
+                (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;кг.
               </p>
-              <a class="slider-content-link buttons-tab" href="#">Подробнее</a>
-              <dl class="properties-slider-content">
+              <a class="slider-content-link buttons-tab buttons-active-states" href="#">Подробнее</a>
+              <dl class="properties-slider-content slider-content-selfie">
                 <div class="properties-slider-container">
                   <dt class="termin-slider-content">Длина палки</dt>
                   <dd class="details-slider-content">8,5 м</dd>
@@ -209,29 +213,34 @@
           <h3 class="visually-hidden">Доставка, гарантия, кредит</h3>
           <ul class="buttons-tab-list">
             <li class="buttons-tab-item">
-              <button class="buttons-tab order-buttons buttons-tab-active buttons-tab-active-current buttons-states" type="button">Доставка</button>
+              <!-- Добавить кнопке disabled чтобы увидеть неактивное состояние -->
+              <button class="buttons-tab order-buttons buttons-tab-active buttons-tab-active-current buttons-states"
+                type="button">Доставка</button>
             </li>
             <li class="buttons-tab-item">
+              <!-- Добавить кнопке disabled чтобы увидеть неактивное состояние -->
               <button class="buttons-tab buttons-styles buttons-active-states" type="button">Гарантия</button>
             </li>
             <li class="buttons-tab-item">
+              <!-- Добавить кнопке disabled чтобы увидеть неактивное состояние -->
               <button class="buttons-tab buttons-styles buttons-active-states" type="button">Кредит</button>
             </li>
           </ul>
           <ul class="tab-list">
-            <li class="tab-item">
+            <!-- Добавить класс tab-show элементам спискам, чтобы увидеть последующие элементы -->
+            <li class="tab-item tab-delivery tab-show">
               <h3 class="tab-title title-delivery">Доставка</h3>
-              <p class="tab-description">Мы с удовольствием доставим ваш товар прямо<br>
-                к вашему подъезду совершенно бесплатно! Ведь<br>
-                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <p class="tab-description">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо
+                к&nbsp;вашему подъезду совершенно бесплатно! Ведь
+                мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
             </li>
-            <li class="tab-item">
+            <li class="tab-item tab-guarantee">
               <h3 class="tab-title title-guarantee">Гарантия</h3>
               <p class="tab-description">Если из-за возгорания купленного у нас товара у вас<br>
                 сгорит дом — не переживайте, мы выдадим вам новый. <br>
                 Товар, не дом, конечно же.</p>
             </li>
-            <li class="tab-item">
+            <li class="tab-item tab-credit">
               <h3 class="tab-title title-credit">Кредит</h3>
               <p class="tab-description">Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас
                 наиболее выгодные<br> условия кредита. Выгодные для банка, разумеется.</p>
@@ -241,8 +250,9 @@
       </section>
       <section class="delivery-order delivery-order-wrapper container">
         <h2 class="visually-hidden">Доставка товара</h2>
-        <a class="delivery-order-link order-link-wrapper" href="#">
-          <span class="order-link-title">Доставим редкий товар под заказ</span>
+        <a class="delivery-order-link order-link-wrapper order-link-title" href="#">
+          Доставим редкий товар под заказ
+          <span class="order-link-icon"></span>
         </a>
       </section>
       <section class="information container">
@@ -291,6 +301,7 @@
           <div class="container-footer-form">
             <form class="subscribes-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="subscribes-label">
+                <!-- Для проверки неактивного состояния добавить на инпут disabled -->
                 <input class="subscribes-input" type="email" placeholder="Ваш e-mail">
               </label>
               <button class="button-subscribe" type="submit">Подписаться</button>
@@ -303,7 +314,7 @@
     <footer class="page-footer">
       <div class="container page-footer-wrapper">
         <a href="#" class="footer-link-logo">
-          <img src="./images/device-logo-foot.svg" alt="Логотип Девайс" width="145" height="36">
+          <img src="./images/device-logo-foot.svg" alt="Логотип Девайс." width="145" height="36">
         </a>
         <div class="content-wrapper">
           <div class="logo-address-wrapper">
@@ -373,6 +384,80 @@
         </div>
       </div>
     </footer>
+    <!-- Для просмотра модального окна удалить класс modal-close-state -->
+    <div class="modal modal-close-state">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-inner">
+          <div class="modal-content-title">
+            <h2 class="modal-title main-content-title">Доставка под заказ</h2>
+            <div class="close-wrapper">
+              <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+            </div>
+          </div>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-id">
+              <div class="modal-name-wrapper">
+                <label class="modal-name">
+                  <span class="title-modal title-states">Ваше имя:</span>
+                  <!-- Добавить инпуту класс modal-states-error для реализации ошибки -->
+                  <!-- Добавить инпуту disabled для проверки состояния -->
+                  <input class="modal-input-name modal-states" type="text" placeholder="Введите имя">
+                </label>
+              </div>
+              <div class="modal-mail-wrapper">
+                <label class="modal-mail">
+                  <span class="title-modal title-states">Ваш e-mail:</span>
+                  <!-- Добавить инпуту класс modal-states-error для реализации ошибки -->
+                  <!-- Добавить инпуту disabled для проверки состояния -->
+                  <input class="modal-input-mail modal-states" type="email" placeholder="Введите ваш e-mail">
+                </label>
+                <!-- Добавить класс modal-states-error для реализации ошибки -->
+                <span class="funny-word">Забавный у вас адрес</span>
+              </div>
+            </div>
+            <div class="modal-numbers-persons">
+              <div class="modal-free-wrapper">
+                <label class="modal-free">
+                  <span class="title-modal title-states">Что нужно привезти:</span>
+                  <!-- Добавить disabled для проверки состояния -->
+                  <textarea class="modal-input-free modal-states" placeholder="В свободной форме" rows="1"
+                    required></textarea>
+                </label>
+              </div>
+              <div class="modal-persons-wrapper">
+                <label class="modal-persons title-modal" for="input-modal-numbers">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <img class="modal-icon-tooltip" src="./images/modal-icon-i.svg" alt="логотип тултип." width="2"
+                      height="12">
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно.
+                    Привезём сколько получится по&nbsp;требованиям
+                    к&nbsp;провозу багажа.</span>
+                </span>
+                <!-- Для ошибки повесить класс inputs-error на div.inputs-buttons -->
+                <div class="inputs-buttons">
+                  <button class="buttons-numbers button-input-down" type="button">
+                    <span class="visually-hidden"></span>
+                  </button>
+                  <!-- Добавить инпуту disabled для проверки состояния -->
+                  <input type="number" name="input-modal-numbers" id="input-modal-numbers"
+                    class="modal-input-persons modal-states" value="1" min="1" max="20">
+                  <button class="buttons-numbers button-input-up" type="button">
+                    <span class="visually-hidden"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button-send buttons-tab buttons-active-states" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </body>
 
 </html>

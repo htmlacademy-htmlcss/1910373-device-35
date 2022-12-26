@@ -9,19 +9,23 @@
 
   <body>
     <header class="page-header container">
-      <a href="#" class="navigation-link-logo">
-        <img src="./images/device-logo-head.svg" alt="Логотип Девайс" width="145" height="36">
+      <a href="index.html" class="navigation-link-logo">
+        <img src="./images/device-logo-head.svg" alt="Логотип Девайс." width="145" height="36">
       </a>
       <div class="container-user-menu">
         <form class="search-form-navigation" action="https://echo.htmlacademy.ru/" method="post">
           <label class="label-search-of-site">
-            <input class="field" type="text" id="search-of-site" placeholder="Поиск по сайту">
-            <span class="input-border"></span>
+            <!-- Для проверки неактивного состояния повесить на инпут disabled -->
+            <input class="field" type="search" id="search-of-site" placeholder="Поиск по сайту">
           </label>
+          <!-- Для проверки неактивного состояния повесить disabled -->
           <button class="button-form-navigation" type="submit">Найти</button>
         </form>
         <div class="navigation-user">
-          <a class="navigation-link navigation-sign" href="#">Войти</a>
+          <div class="sign-up-wrapper">
+          <a class="navigation-link navigation-sign link-sign-up" href="#">Коля Петухов</a>
+          <a class="navigation-link navigation-sign-up" href="#">Выйти</a>
+          </div>
           <a class="navigation-link navigation-compare" href="#">Сравнить</a>
           <div class="navigation-popover">
             <a class="navigation-link navigation-basket" href="#" data-counter="2">Корзина</a>
@@ -47,13 +51,15 @@
                     <span class="visually-hidden">Закрыть</span>
                   </button>
                 </li>
-                <div class="popover-price-wrapper">
-                  <span class="popover-number-product">Товаров: 2</span>
-                  <span class="popover-price">Сумма: 2000 ₽</span>
-                </div>
-                <div class="button-popover-container">
-                  <button class="button-popover" type="button">Открыть корзину</button>
-                </div>
+              </ul>
+              <div class="popover-price-wrapper">
+                <span class="popover-number-product">Товаров: 2</span>
+                <span class="popover-price">Сумма: 2000 ₽</span>
+              </div>
+              <div class="button-popover-container">
+                <!-- Для проверки состояния Disable убрать у ссылки href -->
+                <a class="button-popover" href="#">Открыть корзину</a>
+              </div>
             </div>
           </div>
         </div>
@@ -65,22 +71,22 @@
           </button>
           <ul class="subcatalog">
             <li class="subcatalog-item">
-              <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+              <a class="subcatalog-link" href="catalog.html">Виртуальная реальность</a>
             </li>
             <li class="subcatalog-item">
-              <a class="subcatalog-link" href="#">Моноподы для селфи</a>
+              <a class="subcatalog-link" href="catalog.html">Моноподы для селфи</a>
             </li>
             <li class="subcatalog-item">
-              <a class="subcatalog-link" href="#">Экшн-камеры</a>
+              <a class="subcatalog-link" href="catalog.html">Экшн-камеры</a>
             </li>
             <li class="subcatalog-item">
-              <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
+              <a class="subcatalog-link" href="catalog.html">Фитнес-браслеты</a>
             </li>
             <li class="subcatalog-item">
-              <a class="subcatalog-link" href="#">Умные часы</a>
+              <a class="subcatalog-link" href="catalog.html">Умные часы</a>
             </li>
             <li class="subcatalog-item">
-              <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+              <a class="subcatalog-link" href="catalog.html">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
@@ -146,6 +152,7 @@
                 <legend class="catalog-filter-title title-color">Цвет</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
+                    <!-- Для неактивного состояния повесить на label класс control-disabled -->
                     <label class="control">
                       <input class="visually-hidden catalog-filter-input" type="checkbox" name="color" value="black"
                         checked>
@@ -154,6 +161,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
+                    <!-- Для неактивного состояния повесить на label класс control-disabled -->
                     <label class="control">
                       <input class="visually-hidden catalog-filter-input" type="checkbox" name="color" value="white"
                         checked>
@@ -162,6 +170,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
+                    <!-- Для неактивного состояния повесить на label класс control-disabled -->
                     <label class="control">
                       <input class="visually-hidden catalog-filter-input" type="checkbox" name="color" value="blue">
                       <span class="control-mark"></span>
@@ -169,6 +178,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
+                    <!-- Для неактивного состояния повесить на label класс control-disabled -->
                     <label class="control">
                       <input class="visually-hidden catalog-filter-input" type="checkbox" name="color" value="red">
                       <span class="control-mark"></span>
@@ -176,6 +186,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
+                    <!-- Для неактивного состояния повесить на label класс control-disabled -->
                     <label class="control">
                       <input class="visually-hidden catalog-filter-input" type="checkbox" name="color" value="pink">
                       <span class="control-mark"></span>
@@ -188,6 +199,7 @@
                 <legend class="catalog-filter-title title-bluetooth">Bluetooth</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item bluetooth-item">
+                    <!-- Для неактивного состояния повесить на label класс control-disabled -->
                     <label class="control control-label-radio-filter">
                       <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="on" checked>
                       <span class="control-radio"></span>
@@ -195,6 +207,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item bluetooth-item">
+                    <!-- Для неактивного состояния повесить на label класс control-disabled -->
                     <label class="control control-label-radio-filter">
                       <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="off">
                       <span class="control-radio"></span>
@@ -203,12 +216,13 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="buttons-tab button-filter-show" type="submit">Показать</button>
+              <button class="buttons-tab button-filter-show buttons-active-states" type="submit">Показать</button>
             </form>
           </div>
           <div class="product-and-sorting">
             <div class="sorting-container">
               <h2 class="sorting-title">Сортировка:</h2>
+              <!-- Для неактивного состояния добавить disabled -->
               <select class="sorting-filter" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
                 <option value="expensive">Дорогие</option>
@@ -219,16 +233,19 @@
                 </button>
                 <button class="button-view button-rotate" type="button">
                   <span class="visually-hidden">Показать по убыванию</span>
-                  </b>
+                </button>
               </div>
             </div>
             <div class="product-card">
               <ul class="product-list">
                 <li class="product-item">
-                  <a class="product-link" href="#">
-                    <img class="product-image" src="./images/selfie-product.png" alt="Селфи-палка." width="360"
-                      height="380">
-                      <span class="cart-link" href="#">Подробнее</span>
+                  <!-- Повесить класс new на ссылку product-link для добавления логотипа  -->
+                  <a class="product-link new" href="#">
+                    <div class="product-image-wrapper">
+                      <img class="product-image" src="./images/selfie-product.png" alt="Селфи-палка." width="360"
+                        height="380">
+                    </div>
+                    <span class="cart-link">Подробнее</span>
                     <div class="product-link-wrapper">
                       <h3 class="product-title">Любительская<br> селфи-палка</h3>
                       <span class="product-price">500 ₽</span>
@@ -236,10 +253,12 @@
                   </a>
                 </li>
                 <li class="product-item">
-                  <a class="product-link new" href="#">
-                    <img class="product-image" src="./images/selfie-product-pro.png" alt="Селфи-палка." width="360"
-                      height="380">
-                      <span class="cart-link" href="#">Подробнее</span>
+                  <a class="product-link" href="#">
+                    <div class="product-image-wrapper">
+                      <img class="product-image" src="./images/selfie-product-pro.png" alt="Селфи-палка." width="360"
+                        height="380">
+                    </div>
+                    <span class="cart-link">Подробнее</span>
                     <div class="product-link-wrapper">
                       <h3 class="product-title">Профессиональная<br> селфи-палка</h3>
                       <span class="product-price">1500 ₽</span>
@@ -248,9 +267,11 @@
                 </li>
                 <li class="product-item">
                   <a class="product-link" href="#">
-                    <img class="product-image" src="./images/selfie-product-ip.png" alt="Селфи-палка." width="360"
-                      height="380">
-                      <span class="cart-link" href="#">Подробнее</span>
+                    <div class="product-image-wrapper">
+                      <img class="product-image" src="./images/selfie-product-ip.png" alt="Селфи-палка." width="360"
+                        height="380">
+                    </div>
+                    <span class="cart-link">Подробнее</span>
                     <div class="product-link-wrapper">
                       <h3 class="product-title">Непотопляемая<br> селфи-палка</h3>
                       <span class="product-price">2500 ₽</span>
@@ -259,9 +280,11 @@
                 </li>
                 <li class="product-item">
                   <a class="product-link" href="#">
-                    <img class="product-image" src="./images/selfie-product-follow-me.png" alt="Селфи-палка" width="360"
-                      height="380">
-                      <span class="cart-link" href="#">Подробнее</span>
+                    <div class="product-image-wrapper">
+                      <img class="product-image" src="./images/selfie-product-follow-me.png" alt="Селфи-палка."
+                        width="360" height="380">
+                    </div>
+                    <span class="cart-link">Подробнее</span>
                     <div class="product-link-wrapper">
                       <h3 class="product-title">Селфи-палка «Следуй<br> за мной»</h3>
                       <span class="product-price">1500 ₽</span>
@@ -269,10 +292,12 @@
                   </a>
                 </li>
               </ul>
+              <!-- Добавить кнопке disabled чтобы увидеть неактивное состояние -->
               <button class="button-product-loading" type="button">Загрузить ещё</button>
               <div class="pagination-wrapper">
                 <div class="buttons-pagination-preview">
-                  <button class="buttons-pagination pagination-preview" type="button">Назад</button>
+                  <!-- Убрать класс buttons-pagination-un-active чтобы тапать назад -->
+                  <a class="buttons-pagination pagination-preview buttons-pagination-un-active">Назад</a>
                 </div>
                 <ul class="pagination-list">
                   <li class="pagination-item">
@@ -292,7 +317,7 @@
                   </li>
                 </ul>
                 <div class="buttons-pagination-next">
-                  <button class="buttons-pagination pagination-next" type="button">Вперёд</button>
+                  <a class="buttons-pagination pagination-next" href="#">Вперёд</a>
                 </div>
               </div>
             </div>
@@ -303,7 +328,7 @@
     <footer class="page-footer">
       <div class="container page-footer-wrapper">
         <a href="#" class="footer-link-logo">
-          <img src="./images/device-logo-foot.svg" alt="Логотип Девайс" width="145" height="36">
+          <img src="./images/device-logo-foot.svg" alt="Логотип Девайс." width="145" height="36">
         </a>
         <div class="content-wrapper">
           <div class="logo-address-wrapper">
