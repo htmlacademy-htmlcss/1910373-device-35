@@ -90,7 +90,7 @@ body {
 }
 
 .navigation-sign {
-  width: 83px;
+  width: 86px;
   position: relative;
   padding: 0 0 0 29px;
 }
@@ -110,6 +110,7 @@ body {
 .navigation-sign-up {
   cursor: pointer;
   opacity: 0.3;
+  padding: 2px;
 }
 
 .navigation-sign-up:hover {
@@ -141,7 +142,7 @@ body {
 .navigation-compare {
   padding: 0 0 0 24px;
   position: relative;
-  width: 114px;
+  width: 110px;
 }
 
 .navigation-compare::before {
@@ -151,7 +152,7 @@ body {
   background-repeat: no-repeat;
   width: 10px;
   height: 12px;
-  left: 0;
+  left: 2px;
   top: 9px;
 }
 
@@ -171,8 +172,9 @@ body {
   display: block;
   position: relative;
   width: 132px;
-  padding: 0 0 0 51px;
+  padding: 0 0 0 34px;
   z-index: 2;
+  text-align: center;
 }
 
 .navigation-basket::before {
@@ -182,7 +184,7 @@ body {
   background-repeat: no-repeat;
   width: 16px;
   height: 14px;
-  left: 24px;
+  left: 17px;
   top: 7px;
 }
 
@@ -201,7 +203,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  right: calc(100% - 34px);
+  right: calc(100% - 26px);
 }
 
 .navigation-basket:hover {
@@ -350,7 +352,7 @@ body {
 
 .link-sign-up {
   margin: 0 12px 0 0;
-  padding: 0 2px 0 29px;
+  padding: 4px 2px 4px 29px;
 }
 
 .navigation-link-logo {
@@ -862,58 +864,41 @@ body {
   justify-content: center;
 }
 
-
-.buttons-states {
+.buttons-active-black {
+  background-color: #000000;
+  width: 286px;
+  z-index: 1;
+  visibility: visible;
+  color: #ffe17f;
   transition: 0.3s ease;
 }
 
-.buttons-states:hover {
-  padding-left: 35px;
+.buttons-active-black.guarantee-current {
+  display: flex;
+  justify-content: start;
 }
 
-.buttons-states:active {
-  padding-left: 35px;
-  outline: none;
+.buttons-active-black.delivery-current {
+  display: flex;
+  justify-content: start;
 }
 
-.buttons-states:focus::after {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
+.buttons-active-black.buttons-credit {
+  display: flex;
+  justify-content: start;
+  padding-left: 33px;
 }
 
-.buttons-states:disabled {
-  opacity: 0.3;
-  pointer-events: none;
+.buttons-active-black:hover {
+  padding-left: 26%;
 }
 
-.buttons-tab-active {
-  position: relative;
+.buttons-active-black:hover.buttons-credit {
+  padding-left: 36%;
 }
 
-.buttons-tab-active::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 286px;
-  background-color: #000000;
-  opacity: 0;
-  visibility: hidden;
-  z-index: -1;
-  top: 0;
-  left: -5px;
-}
-
-/* .buttons-tab-active::before {
+.buttons-active-black.buttons-tab::before {
   display: none;
-} */
-
-.buttons-tab-active-current {
-  color: #ffe17f;
-}
-
-.buttons-tab-active-current::after {
-  opacity: 1;
-  visibility: visible;
 }
 
 .buttons-tab::before {
@@ -941,12 +926,15 @@ body {
   outline: 2px solid #af4fff;
 }
 
+.buttons-active-states:focus.buttons-active-black {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .buttons-tab:disabled {
   opacity: 0.3;
   pointer-events: none;
 }
-
-
 
 .buttons-tab-list::before {
   position: absolute;
@@ -2323,6 +2311,11 @@ body {
   display: block;
   width: 220px;
   text-align: center;
+}
+
+.button-filter-show:disabled {
+  opacity: 03;
+  pointer-events: none;
 }
 
 .button-product-loading {
