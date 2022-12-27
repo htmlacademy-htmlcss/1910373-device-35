@@ -23,9 +23,9 @@
         </form>
         <div class="navigation-user">
           <div class="sign-up-wrapper">
-          <a class="navigation-link navigation-sign link-sign-up" href="#">Коля Петухов</a>
-          <a class="navigation-link navigation-sign-up" href="#">Выйти</a>
+            <a class="navigation-link navigation-sign link-sign-up" href="#">Коля Петухов</a>
           </div>
+          <a class="navigation-link navigation-sign-up" href="#">Выйти</a>
           <a class="navigation-link navigation-compare" href="#">Сравнить</a>
           <div class="navigation-popover">
             <a class="navigation-link navigation-basket" href="#" data-counter="2">Корзина</a>
@@ -224,10 +224,13 @@
             <div class="sorting-container">
               <h2 class="sorting-title">Сортировка:</h2>
               <!-- Для неактивного состояния добавить disabled -->
-              <select class="sorting-filter" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="expensive">Дорогие</option>
-              </select>
+              <div class="select-wrapper"> <select class="sorting-filter" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="expensive">Дорогие</option>
+                  <option value="expensive">Дешевые</option>
+                </select>
+              </div>
+
               <div class="buttons-view">
                 <button class="button-view button-view-up" type="button">
                   <span class="visually-hidden">Показать по возрастанию</span>
@@ -287,7 +290,7 @@
                     </div>
                     <span class="cart-link">Подробнее</span>
                     <div class="product-link-wrapper">
-                      <h3 class="product-title">Селфи-палка «Следуй<br> за мной»</h3>
+                      <h3 class="product-title">Селфи-палка &laquo;Следуй за&nbsp;мной&raquo;</h3>
                       <span class="product-price">1500 ₽</span>
                     </div>
                   </a>

@@ -82,17 +82,18 @@ body {
 }
 
 .navigation-user {
-  display: grid;
-  grid-template-columns: 226px 1fr 1fr;
+  display: flex;
   padding: 5px 0 5px 26px;
   gap: 10px;
   align-self: start;
+  flex-wrap: wrap;
 }
 
 .navigation-sign {
   width: 86px;
   position: relative;
   padding: 0 0 0 29px;
+  margin-right: auto;
 }
 
 .navigation-sign::before {
@@ -110,7 +111,7 @@ body {
 .navigation-sign-up {
   cursor: pointer;
   opacity: 0.3;
-  padding: 2px;
+  padding: 0 2px 0 2px;
 }
 
 .navigation-sign-up:hover {
@@ -227,7 +228,7 @@ body {
   grid-row-gap: 20px;
   position: absolute;
   left: 0;
-  padding: 33px 0 27px 60px;
+  padding: 33px 60px 27px 60px;
   margin: 0;
   width: calc(100% + 120px);
   max-width: 1160px;
@@ -496,11 +497,20 @@ body {
 
 .slider {
   background-image: linear-gradient(#ffe17f 114px, transparent 114px);
-  padding-top: 83px;
-  position: relative;
+  padding: 83px 0 70px 0;
 }
 
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  padding: 0 0 30px 0;
+}
 
+.slider-wrapper {
+  position: relative;
+  margin: 0 0 10px 0;
+}
 
 .slider-card-list {
   list-style-type: none;
@@ -535,29 +545,29 @@ body {
   display: none;
 }
 
-/* .slider-card-item:not(:nth-child(1)) {
-  display: none;
-} */
-
 .slider-card-current {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: block;
+}
+
+.image-content {
+  display: flex;
   gap: 40px;
 }
 
-.image-slider {
+.slider-image-wrapper {
   display: block;
   position: relative;
   bottom: 110px;
 }
 
 .slider-controls {
-  position: absolute;
-  width: 530px;
-  top: 174px;
+  top: 88px;
   left: 30px;
+  width: 530px;
+  position: absolute;
   display: flex;
   justify-content: space-between;
+
 }
 
 .button-slider {
@@ -658,13 +668,10 @@ body {
 
 .indicators-pagination {
   width: 76px;
-  position: relative;
-  display: grid;
-  left: 530px;
-  bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   gap: 15px;
-  grid-template-columns: 1fr 1fr 1fr;
-  z-index: 1;
 }
 
 .indicators-button {
@@ -681,10 +688,11 @@ body {
 .indicators-button::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
-  left: -4px;
-  bottom: -4px;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .indicators-button-active {
@@ -699,11 +707,15 @@ body {
   opacity: 0.3;
 }
 
-.indicators-button:focus::before {
+.indicators-button:focus {
   outline: 2px solid #af4fff;
   border: none;
 }
 
+.indicators-button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
 
 /* category */
 
@@ -1025,8 +1037,6 @@ body {
 }
 
 /* order-buttons-styles */
-
-
 
 /* delivery */
 
@@ -1978,15 +1988,18 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  width: 142px;
-  height: 30px;
-  margin-top: 19px;
+  min-width: 142px;
   border: none;
   background-color: #f0f0f0;
   appearance: none;
   background-image: url("../images/check-mark-filter.svg");
   background-repeat: no-repeat;
-  background-position: 118px 13px;
+  background-position: 124px 13px;
+  padding: 0 0 0 5px;
+}
+
+.select-wrapper {
+  padding: 20px;
 }
 
 .sorting-filter:hover {
