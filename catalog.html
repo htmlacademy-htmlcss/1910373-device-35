@@ -16,7 +16,7 @@
         <form class="search-form-navigation" action="https://echo.htmlacademy.ru/" method="post">
           <label class="label-search-of-site">
             <!-- Для проверки неактивного состояния повесить на инпут disabled -->
-            <input class="field" type="search" id="search-of-site" placeholder="Поиск по сайту">
+            <input class="search-field" type="search" id="search-of-site" placeholder="Поиск по сайту">
           </label>
           <!-- Для проверки неактивного состояния повесить disabled -->
           <button class="button-form-navigation" type="submit">Найти</button>
@@ -69,36 +69,38 @@
           <button class="button-catalog button-wrapper" type="button">Каталог товаров
             <span class="button-element"></span>
           </button>
-          <ul class="subcatalog">
-            <li class="subcatalog-item">
-              <a class="subcatalog-link" href="catalog.html">Виртуальная реальность</a>
+          <ul class="sub-catalog">
+            <!-- Чтобы увидеть активное состояние у ссылок добавить класс catalog-active  -->
+            <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#">Виртуальная реальность</a>
             </li>
-            <li class="subcatalog-item">
-              <a class="subcatalog-link" href="catalog.html">Моноподы для селфи</a>
+            <li class="sub-catalog-item">
+              <a class="sub-catalog-link catalog-active" href="catalog.html">Моноподы для селфи</a>
             </li>
-            <li class="subcatalog-item">
-              <a class="subcatalog-link" href="catalog.html">Экшн-камеры</a>
+            <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#">Экшн-камеры</a>
             </li>
-            <li class="subcatalog-item">
-              <a class="subcatalog-link" href="catalog.html">Фитнес-браслеты</a>
+            <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="subcatalog-item">
-              <a class="subcatalog-link" href="catalog.html">Умные часы</a>
+            <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#">Умные часы</a>
             </li>
-            <li class="subcatalog-item">
-              <a class="subcatalog-link" href="catalog.html">Квадрокоптеры</a>
+            <li class="sub-catalog-item item-current">
+              <a class="sub-catalog-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
         <ul class="navigation-list">
+          <!-- Чтобы увидеть активное состояние у ссылок добавить класс button-catalog-active  -->
           <li class="navigation-item">
-            <button class="button-catalog button-navigation" type="button">Доставка</button>
+            <a class="button-catalog button-navigation" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <button class="button-catalog button-navigation" type="button">Гарантия</button>
+            <a class="button-catalog button-navigation" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <button class="button-catalog button-navigation" type="button">Контакты</button>
+            <a class="button-catalog button-navigation" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
