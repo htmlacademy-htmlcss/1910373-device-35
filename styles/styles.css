@@ -1430,6 +1430,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   font-style: normal;
+  padding: 0 0 60px 0;
 }
 
 .footer-number-phone {
@@ -1588,10 +1589,54 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: #ffffff;
-  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   position: relative;
+}
+
+.social-telegram {
+  position: relative;
+}
+
+.social-telegram::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 13px;
+  background-image: url("../images/telegram-logo.svg");
+  background-repeat: no-repeat;
+  left: calc(100% - 27px);
+  top: calc(100% - 26px);
+}
+
+.social-youtube {
+  position: relative;
+}
+
+.social-youtube::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 11px;
+  background-image: url("../images/youtube-logo.svg");
+  background-repeat: no-repeat;
+  left: calc(100% - 28px);
+  top: calc(100% - 25px);
+}
+
+.social-twitter {
+  position: relative;
+}
+
+.social-twitter::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/twitter-logo.svg");
+  background-repeat: no-repeat;
+  left: calc(100% - 27px);
+  top: calc(100% - 27px);
 }
 
 .footer-social-link::before {
@@ -1604,31 +1649,32 @@ body {
 
 .footer-social-link:hover {
   background-color: #ffc700;
-  opacity: 1;
 }
 
-.footer-social-link:active .icon-social {
+.footer-social-link:active {
   background-color: #ffc700;
+}
+
+.social-telegram:active::after {
   opacity: 0.3;
+}
+
+.social-youtube:active::after {
+  opacity: 0.3;
+}
+
+.social-twitter:active::after {
+  opacity: 0.3;
+}
+
+.footer-social-link:focus::before {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .footer-social-link:focus {
   outline: none;
   border: none;
-}
-
-.footer-social-link:focus::before {
-  outline: 2px solid #af4fff;
-}
-
-.icon-social {
-  position: relative;
-  top: 5px;
-  left: 12px;
-}
-
-.icon-twitter {
-  top: 7px;
 }
 
 /* catalog */
@@ -1746,6 +1792,7 @@ body {
 
 .button-popover:active {
   color: rgb(0, 0, 0, 0.3);
+  background-color: #ffe17f;
 }
 
 .button-popover:focus {
@@ -2898,6 +2945,7 @@ body {
   position: absolute;
   top: -1px;
   left: -1px;
+  -moz-transform: translate(0, 15px);
 }
 
 .tooltip-text {
@@ -2912,8 +2960,8 @@ body {
   background-color: #000000;
   z-index: 20;
   padding: 19px 17px 20px 19px;
-  right: -64px;
-  top: 35px;
+  transform: translate(-141px, 35px);
+  -moz-transform: translate(-18px, -1px);
   box-shadow: 0 10px 0 0 rgb(0 0 0 / 10%);
 }
 
