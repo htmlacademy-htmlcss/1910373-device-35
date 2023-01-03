@@ -16,7 +16,7 @@
         <form class="search-form-navigation" action="https://echo.htmlacademy.ru/" method="post">
           <label class="label-search-of-site">
             <!-- Для проверки неактивного состояния повесить на инпут disabled -->
-            <input class="search-field" type="search" id="search-of-site" placeholder="Поиск по сайту">
+            <input class="search-field" type="search" name="search-of-site" placeholder="Поиск по сайту">
           </label>
           <!-- Для проверки неактивного состояния повесить disabled -->
           <button class="button-form-navigation" type="submit">Найти</button>
@@ -120,11 +120,11 @@
                   <a class="slider-content-link buttons-tab buttons-active-states" href="#">Подробнее</a>
                   <dl class="properties-slider-content">
                     <div class="properties-slider-container">
-                      <dt class="termin-slider-content">Дальность полета</dt>
+                      <dt class="term-slider-content">Дальность полета</dt>
                       <dd class="details-slider-content">800 м</dd>
                     </div>
                     <div class="properties-slider-container">
-                      <dt class="termin-slider-content">Радиус поражения</dt>
+                      <dt class="term-slider-content">Радиус поражения</dt>
                       <dd class="details-slider-content">50 м</dd>
                     </div>
                   </dl>
@@ -146,7 +146,7 @@
                   <a class="slider-content-link buttons-tab buttons-active-states" href="#">Подробнее</a>
                   <dl class="properties-slider-content">
                     <div class="properties-slider-container">
-                      <dt class="termin-slider-content">Без подзарядки</dt>
+                      <dt class="term-slider-content">Без подзарядки</dt>
                       <dd class="details-slider-content">48 часов</dd>
                     </div>
                   </dl>
@@ -168,15 +168,15 @@
                   <a class="slider-content-link buttons-tab buttons-active-states" href="#">Подробнее</a>
                   <dl class="properties-slider-content slider-content-selfie">
                     <div class="properties-slider-container">
-                      <dt class="termin-slider-content">Длина палки</dt>
+                      <dt class="term-slider-content">Длина палки</dt>
                       <dd class="details-slider-content">8,5 м</dd>
                     </div>
                     <div class="properties-slider-container">
-                      <dt class="termin-slider-content">Вес палки</dt>
+                      <dt class="term-slider-content">Вес палки</dt>
                       <dd class="details-slider-content">5 кг</dd>
                     </div>
                     <div class="properties-slider-container">
-                      <dt class="termin-slider-content">Материал</dt>
+                      <dt class="term-slider-content">Материал</dt>
                       <dd class="details-slider-content">Карбон</dd>
                     </div>
                   </dl>
@@ -331,7 +331,7 @@
             <form class="subscribes-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="subscribes-label">
                 <!-- Для проверки неактивного состояния добавить на инпут disabled -->
-                <input class="subscribes-input" type="email" placeholder="Ваш e-mail">
+                <input class="subscribes-input" type="email" name="inputs-mail" placeholder="Ваш e-mail">
               </label>
               <button class="button-subscribe" type="submit">Подписаться</button>
             </form>
@@ -429,7 +429,8 @@
                   <span class="title-modal title-states">Ваше имя:</span>
                   <!-- Добавить инпуту класс modal-states-error для реализации ошибки -->
                   <!-- Добавить инпуту disabled для проверки состояния -->
-                  <input class="modal-input-name modal-states" type="text" placeholder="Введите имя">
+                  <input class="modal-input-name modal-states" type="text" name="input-modal-name"
+                    placeholder="Введите имя" required>
                 </label>
               </div>
               <div class="modal-mail-wrapper">
@@ -437,7 +438,8 @@
                   <span class="title-modal title-states">Ваш e-mail:</span>
                   <!-- Добавить инпуту класс modal-states-error для реализации ошибки -->
                   <!-- Добавить инпуту disabled для проверки состояния -->
-                  <input class="modal-input-mail modal-states" type="email" placeholder="Введите ваш e-mail">
+                  <input class="modal-input-mail modal-states" type="email" name="input-modal-mail"
+                    placeholder="Введите ваш e-mail" required>
                 </label>
                 <!-- Добавить класс modal-states-error для реализации ошибки -->
                 <span class="funny-word">Забавный у вас адрес</span>
@@ -460,8 +462,7 @@
                       height="12">
                   </button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно.
-                    Привезём сколько получится по&nbsp;требованиям
-                    к&nbsp;провозу багажа.</span>
+                    Привезём сколько получится по требованиям к&nbsp;провозу багажа.</span>
                 </span>
                 <!-- Для ошибки повесить класс inputs-error на div.inputs-buttons -->
                 <div class="inputs-buttons">

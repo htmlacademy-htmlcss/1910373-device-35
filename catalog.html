@@ -8,25 +8,23 @@
   </head>
 
   <body>
-    <header class="page-header container">
-      <a href="index.html" class="navigation-link-logo">
+    <header class="page-header container page-header-catalog">
+      <a class="navigation-link-logo" href="index.html">
         <img src="./images/device-logo-head.svg" alt="Логотип Девайс." width="145" height="36">
       </a>
       <div class="container-user-menu">
         <form class="search-form-navigation" action="https://echo.htmlacademy.ru/" method="post">
           <label class="label-search-of-site">
             <!-- Для проверки неактивного состояния повесить на инпут disabled -->
-            <input class="search-field" type="search" id="search-of-site" placeholder="Поиск по сайту">
+            <input class="search-field" type="search" name="search-of-site" placeholder="Текст поиска">
           </label>
           <!-- Для проверки неактивного состояния повесить disabled -->
           <button class="button-form-navigation" type="submit">Найти</button>
         </form>
         <div class="navigation-user">
-          <div class="sign-up-wrapper">
-            <a class="navigation-link navigation-sign link-sign-up" href="#">Коля Петухов</a>
-          </div>
+          <a class="navigation-link navigation-sign link-sign-up" href="#">Коля Петухов</a>
           <a class="navigation-link navigation-sign-up" href="#">Выйти</a>
-          <a class="navigation-link navigation-compare" href="#">Сравнить</a>
+          <a class="navigation-link navigation-compare navigation-compare-catalog" href="#">Сравнить</a>
           <div class="navigation-popover">
             <a class="navigation-link navigation-basket" href="#" data-counter="2">Корзина</a>
             <div class="popover">
@@ -70,12 +68,11 @@
             <span class="button-element"></span>
           </button>
           <ul class="sub-catalog">
-            <!-- Чтобы увидеть активное состояние у ссылок добавить класс catalog-active  -->
             <li class="sub-catalog-item">
               <a class="sub-catalog-link" href="#">Виртуальная реальность</a>
             </li>
             <li class="sub-catalog-item">
-              <a class="sub-catalog-link catalog-active" href="catalog.html">Моноподы для селфи</a>
+              <a class="sub-catalog-link" href="catalog.html">Моноподы для селфи</a>
             </li>
             <li class="sub-catalog-item">
               <a class="sub-catalog-link" href="#">Экшн-камеры</a>
@@ -232,21 +229,20 @@
                   <option value="expensive">Дешевые</option>
                 </select>
               </div>
-
               <div class="buttons-view">
-                <button class="button-view button-view-up" type="button">
+                <a class="button-view button-view-up" href="#">
                   <span class="visually-hidden">Показать по возрастанию</span>
-                </button>
-                <button class="button-view button-rotate" type="button">
+                </a>
+                <a class="button-view button-view-up button-rotate" href="#">
                   <span class="visually-hidden">Показать по убыванию</span>
-                </button>
+                </a>
               </div>
             </div>
             <div class="product-card">
               <ul class="product-list">
                 <li class="product-item">
                   <!-- Повесить класс new на ссылку product-link для добавления логотипа  -->
-                  <a class="product-link new" href="#">
+                  <a class="product-link" href="#">
                     <div class="product-image-wrapper">
                       <img class="product-image" src="./images/selfie-product.png" alt="Селфи-палка." width="360"
                         height="380">
@@ -267,7 +263,7 @@
                     <span class="cart-link">Подробнее</span>
                     <div class="product-link-wrapper">
                       <h3 class="product-title">Профессиональная<br> селфи-палка</h3>
-                      <span class="product-price">1500 ₽</span>
+                      <span class="product-price">1&nbsp;500 ₽</span>
                     </div>
                   </a>
                 </li>
@@ -280,7 +276,7 @@
                     <span class="cart-link">Подробнее</span>
                     <div class="product-link-wrapper">
                       <h3 class="product-title">Непотопляемая<br> селфи-палка</h3>
-                      <span class="product-price">2500 ₽</span>
+                      <span class="product-price">2&nbsp;500 ₽</span>
                     </div>
                   </a>
                 </li>
@@ -293,7 +289,7 @@
                     <span class="cart-link">Подробнее</span>
                     <div class="product-link-wrapper">
                       <h3 class="product-title">Селфи-палка &laquo;Следуй за&nbsp;мной&raquo;</h3>
-                      <span class="product-price">1500 ₽</span>
+                      <span class="product-price">1&nbsp;500 ₽</span>
                     </div>
                   </a>
                 </li>
