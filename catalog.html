@@ -82,20 +82,20 @@
                 реальность</a>
             </li>
             <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Фитнес-браслеты.">Фитнес-браслеты</a>
+            </li>
+            <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Квадрокоптеры.">Квадрокоптеры</a>
+            </li>
+            <li class="sub-catalog-item">
               <a class="sub-catalog-link" href="catalog.html" aria-label="Каталог товаров: Моноподы для селфи.">Моноподы
                 для селфи</a>
             </li>
             <li class="sub-catalog-item">
-              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Экшн-камеры.">Экшн-камеры</a>
-            </li>
-            <li class="sub-catalog-item">
-              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Фитнес-браслеты.">Фитнес-браслеты</a>
-            </li>
-            <li class="sub-catalog-item">
               <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Умные часы.">Умные часы</a>
             </li>
-            <li class="sub-catalog-item item-current">
-              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Квадрокоптеры.">Квадрокоптеры</a>
+            <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Экшн-камеры.">Экшн-камеры</a>
             </li>
           </ul>
         </div>
@@ -317,12 +317,13 @@
               <button class="button-product-loading" type="button">Загрузить ещё</button>
               <div class="pagination-wrapper">
                 <div class="buttons-pagination-preview">
-                  <!-- Убрать класс buttons-pagination-un-active чтобы тапать назад -->
-                  <a class="buttons-pagination pagination-preview buttons-pagination-un-active"
+                  <!-- Убрать у сслыки href для неактивного состояния .buttons-pagination:not([href]) -->
+                  <a class="buttons-pagination pagination-preview"
                     aria-label="Вернуться на предыдущую страницу.">Назад</a>
                 </div>
                 <ul class="pagination-list">
                   <li class="pagination-item">
+                    <!-- Убрать у сслыки href для неактивного состояния .pagination-link:not([href]) -->
                     <a class="pagination-link" aria-label="Страница №1.">1</a>
                   </li>
                   <li class="pagination-item">

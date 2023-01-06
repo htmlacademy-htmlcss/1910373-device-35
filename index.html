@@ -10,7 +10,7 @@
 
   <body>
     <header class="page-header container">
-      <a class="navigation-link-logo" href="index.html" aria-label="Переход на главную страницу интернет-магазина.">
+      <a class="navigation-link-logo" href="#" aria-label="Переход на главную страницу интернет-магазина.">
         <img src="./images/device-logo-head.svg" alt="Логотип интернет-магазина Девайс." width="145" height="36">
       </a>
       <div class="container-user-menu">
@@ -82,20 +82,20 @@
                 реальность</a>
             </li>
             <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Фитнес-браслеты.">Фитнес-браслеты</a>
+            </li>
+            <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Квадрокоптеры.">Квадрокоптеры</a>
+            </li>
+            <li class="sub-catalog-item">
               <a class="sub-catalog-link" href="catalog.html" aria-label="Каталог товаров: Моноподы для селфи.">Моноподы
                 для селфи</a>
             </li>
             <li class="sub-catalog-item">
-              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Экшн-камеры.">Экшн-камеры</a>
-            </li>
-            <li class="sub-catalog-item">
-              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Фитнес-браслеты.">Фитнес-браслеты</a>
-            </li>
-            <li class="sub-catalog-item">
               <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Умные часы.">Умные часы</a>
             </li>
-            <li class="sub-catalog-item item-current">
-              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Квадрокоптеры.">Квадрокоптеры</a>
+            <li class="sub-catalog-item">
+              <a class="sub-catalog-link" href="#" aria-label="Каталог товаров: Экшн-камеры.">Экшн-камеры</a>
             </li>
           </ul>
         </div>
@@ -284,24 +284,24 @@
           </ul>
           <ul class="tab-list">
             <!-- Добавить класс tab-show элементам спискам, чтобы увидеть последующие элементы -->
-            <li class="tab-item tab-delivery  tab-show">
+            <li class="tab-item tab-delivery tab-show">
               <h3 class="tab-title title-delivery">Доставка</h3>
-              <p class="tab-description">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо
+              <p class="tab-description current-delivery">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо
                 к&nbsp;вашему подъезду совершенно бесплатно! Ведь
                 мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
             </li>
             <!-- Добавить класс tab-show элементам спискам, чтобы увидеть последующие элементы -->
             <li class="tab-item tab-guarantee">
               <h3 class="tab-title title-guarantee">Гарантия</h3>
-              <p class="tab-description">Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас
-                сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим вам новый.Товар, не&nbsp;дом,
+              <p class="tab-description current-guarantee">Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас
+                сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим вам новый. Товар, не&nbsp;дом,
                 конечно&nbsp;же.</p>
             </li>
             <!-- Добавить класс tab-show элементам спискам, чтобы увидеть последующие элементы -->
             <li class="tab-item tab-credit">
-              <h3 class="tab-title title-credit">Кредит</h3>
-              <p class="tab-description">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для
-                вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              <h3 class="tab-title">Кредит</h3>
+              <p class="tab-description current-credit">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </li>
           </ul>
         </div>
@@ -367,6 +367,7 @@
                 <input class="subscribes-input" type="email" name="inputs-mail" placeholder="Ваш e-mail"
                   aria-label="Ваш e-mail.">
               </label>
+              <!-- Для проверки неактивного состояния добавить disabled -->
               <button class="button-subscribe" type="submit">Подписаться</button>
             </form>
             <span class="subscribes-phrase">Это бесплатно</span>
@@ -495,7 +496,7 @@
                   <input type="number" name="input-modal-numbers" id="input-modal-numbers"
                     class="modal-input-persons modal-states" value="1" min="1" max="20"
                     aria-label="Введите количество товара.">
-                    <!-- Для проверки неактивного состояния добавить кнопке disabled -->
+                  <!-- Для проверки неактивного состояния добавить кнопке disabled -->
                   <button class="buttons-numbers button-input-up" type="button">
                     <span class="visually-hidden">Увеличить количество товара</span>
                   </button>
