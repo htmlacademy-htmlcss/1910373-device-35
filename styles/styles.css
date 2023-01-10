@@ -2812,7 +2812,7 @@ body {
   background-color: #dcdcdc;
 }
 
-.modal-states:focus-visible {
+.modal-states:focus {
   background-color: #f0f0f0;
   outline: 2px solid #af4fff;
   outline-offset: 2px;
@@ -2921,7 +2921,7 @@ body {
   background-color: #a8a8a8;
 }
 
-.buttons-numbers:focus-visible {
+.buttons-numbers:focus {
   outline: 2px solid #af4fff;
 }
 

@@ -2,10 +2,13 @@
 <html lang="ru">
 
   <head>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Device. интернет-магазин электроники.</title>
+    <meta name="description" content="internet magazine of electronic equipment">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -18,7 +21,7 @@
           <label class="label-search-of-site">
             <!-- Для проверки неактивного состояния повесить на инпут disabled -->
             <input class="search-field" type="search" name="search-of-site" placeholder="Поиск по сайту"
-              aria-label="Поиск по сайту.">
+              aria-label="Поиск товаров по сайту.">
           </label>
           <!-- Для проверки неактивного состояния повесить disabled -->
           <button class="button-form-navigation" type="submit">Найти</button>
@@ -493,9 +496,8 @@
                     <span class="visually-hidden">Уменьшить количество товара</span>
                   </button>
                   <!-- Добавить инпуту disabled для проверки состояния -->
-                  <input type="number" name="input-modal-numbers" id="input-modal-numbers"
-                    class="modal-input-persons modal-states" value="1" min="1" max="20"
-                    aria-label="Введите количество товара.">
+                  <input class="modal-input-persons modal-states" type="number" name="input-modal-numbers"
+                    id="input-modal-numbers" value="1" min="1" max="20" aria-label="Введите количество товара.">
                   <!-- Для проверки неактивного состояния добавить кнопке disabled -->
                   <button class="buttons-numbers button-input-up" type="button">
                     <span class="visually-hidden">Увеличить количество товара</span>
