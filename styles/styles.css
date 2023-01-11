@@ -1321,7 +1321,7 @@ body {
 
 .subscribes {
   background-color: #f0f0f0;
-  padding: 53px 60px 57px 60px;
+  padding: 53px 0 57px 0;
 }
 
 .subscribes-wrapper {
@@ -1535,8 +1535,6 @@ body {
 .page-footer {
   background-color: #444444;
   margin-top: auto;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 .logo-address-wrapper {
